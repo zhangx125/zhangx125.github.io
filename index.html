@@ -48,7 +48,8 @@
       //alert("ININ");
       document.getElementById("showLattd").innerText = position.coords.latitude;
       document.getElementById("showLogtd").innerText = position.coords.longitude;
-      enableSend();
+      //enableSend();
+      showComment("wow");
       //alert(document.forms["locom"]["lattd"].value);
     } else {
       alert("getting position failed");
@@ -65,12 +66,9 @@
   
   </script>
 
-<form id="locom" name="locom" method="post" action="showComment("wow")">
+<form id="locom" name="locom" method="post" action="">
     <label for="expression"><strong>Please share your thoughts:)</strong></label><br>
     <textarea id="expression" name="comment" rows="5" cols="40" onchange="getLocation()"></textarea><br>
-    <input type="hidden" id="lattd" name="lattd">
-    <input type="hidden" id="logtd" name="logtd">
-    <button class="button" type="submit" name="send" disabled>Send</button>
 </form>
 
 <p id="showComment">N/A</p>
