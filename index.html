@@ -33,11 +33,11 @@
 
   function getLocation() {
     try {
-      //alert("IN");
+      alert("IN");
       navigator.geolocation.getCurrentPosition(showPosition);
       //document.forms["locom"]["lattd"].value = navigator.language;
       //document.forms["locom"]["logtd"].value = navigator.language;
-      //alert("OUT");
+      alert("OUT");
     } catch (err) {
       alert(err);
     }
