@@ -56,13 +56,21 @@
   }
   </script>
 
-<form id="locom" name="locom" action="form_handle.php" method="post">
+<form id="locom" name="locom" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
     <label for="expression"><strong>Please share your thoughts:)</strong></label><br>
     <textarea id="expression" name="comment" rows="5" cols="40" onchange="getLocation()"></textarea><br>
     <input type="hidden" id="lattd" name="lattd">
     <input type="hidden" id="logtd" name="logtd">
     <button class="button" type="submit" name="send" disabled>Send</button>
 </form>
+
+<?php
+
+echo $_POST["comment"]."<br>";
+echo $_POST["lattd"]."<br>";
+echo $_POST["logtd"]."<br>";
+
+?>
   
 </body>
 </html>
