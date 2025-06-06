@@ -54,9 +54,18 @@
       alert("getting position failed");
     }
   }
+
+  function showComment(com) {
+    if (com!=null) {
+      document.getElementById("showComment").innerText = com;
+    } else {
+      alert("getting comments failed");
+    }
+  }
+  
   </script>
 
-<form id="locom" name="locom" method="post" action="">
+<form id="locom" name="locom" method="post" action="showComment("wow")">
     <label for="expression"><strong>Please share your thoughts:)</strong></label><br>
     <textarea id="expression" name="comment" rows="5" cols="40" onchange="getLocation()"></textarea><br>
     <input type="hidden" id="lattd" name="lattd">
@@ -64,9 +73,9 @@
     <button class="button" type="submit" name="send" disabled>Send</button>
 </form>
 
-<p id="showComment"></p>
-<p id="showLattd"></p>
-<p id="showLogtd"></p>
+<p id="showComment">N/A</p>
+<p id="showLattd">N/A</p>
+<p id="showLogtd">N/A</p>
   
 </body>
 </html>
