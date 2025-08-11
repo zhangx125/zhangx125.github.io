@@ -16,6 +16,15 @@
       margin: auto;
       text-align: left;
     }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+      gap: 20px; /* Adds space between grid items */
+    }
+    .box {
+      padding: 20px;
+      border: 1px solid black;
+    }
     input[type="text"] {
       width: 80%;
       padding: 10px;
@@ -47,38 +56,39 @@
 <body>
 <h1>LocKing Test Page</h1>
 
-<div class="container">
-
-<form>
-  <label for="Longitude">Longitude: </label>
-  <input type="text" id="Longitude" name="Longitude" /><br>
-  <label for="Latitude">Latitude: </label>
-  <input type="text" id="Latitude" name="Latitude" /><br><br>
-  <label for="From">From: </label>
-  <input type="text" id="From" name="From" /><br>
-  <label for="To">To: </label>
-  <input type="text" id="To" name="To" /><br><br>
-  <label for="Content">Coin: </label>
-  <input type="text" id="Content" name="Content" /><br><br>
-  <button type="submit" name="button0" class="btn">Add Data</button><br><br>
-  <button type="submit" name="button1" class="btn">Clear Table</button><br><br>
-  <button type="submit" name="button2" class="btn">Delete All Tables</button>
-</form>
-
+<div class="grid-container">
+  <div class="box">
+    <form>
+      <label for="Longitude">Longitude: </label>
+      <input type="text" id="Longitude" name="Longitude" /><br>
+      <label for="Latitude">Latitude: </label>
+      <input type="text" id="Latitude" name="Latitude" /><br><br>
+      <label for="From">From: </label>
+      <input type="text" id="From" name="From" /><br>
+      <label for="To">To: </label>
+      <input type="text" id="To" name="To" /><br><br>
+      <label for="Content">Coin: </label>
+      <input type="text" id="Content" name="Content" /><br><br>
+      <button type="submit" name="button0" class="btn">Add Data</button><br><br>
+      <button type="submit" name="button1" class="btn">Clear Table</button><br><br>
+      <button type="submit" name="button2" class="btn">Delete All Tables</button>
+    </form>
+  </div>
+  <div class="box">
+    <table border="1" cellpadding="2" cellspacing="2">
+      <tr>
+      <th>ID</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th>Transmitter</th>
+      <th>Receiver</th>
+      <th>Time</th>
+      <th>Content</th>
+      </tr>
+    </table>
+  </div>
 </div>
 
-<!-- Display table data. -->
-<table border="1" cellpadding="2" cellspacing="2">
-  <tr>
-    <th>ID</th>
-    <th>Longitude</th>
-    <th>Latitude</th>
-    <th>Transmitter</th>
-    <th>Receiver</th>
-    <th>Time</th>
-    <th>Content</th>
-  </tr>
-</table>
 
 </body>
 </html>
