@@ -1,79 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <style media="screen">
-  .button {
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    background-color: #4CAF50;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LocKing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      color: white;
+      background-color: #007BFF;
+      border-radius: 5px;
+    }
+    .message {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .success {
+      color: green;
+    }
+    .error {
+      color: red;
+    }
   </style>
 </head>
 
 <body>
-<h1>TEST</h1>
+<h1>LocKing Test Page</h1>
 
-<script>
-  function enableSend() {
-    try {
-      //alert("IN");
-      document.forms["locom"]["send"].disabled = false;
-      //alert("OUT");
-    } catch (err) {
-      alert(err);
-    }
-  }
+<div class="container">
 
-  function getLocation() {
-    try {
-      //alert("IN");
-      navigator.geolocation.getCurrentPosition(showPosition);
-      //document.forms["locom"]["lattd"].value = navigator.language;
-      //document.forms["locom"]["logtd"].value = navigator.language;
-      //alert("OUT");
-    } catch (err) {
-      alert(err);
-    }
-  }
-
-  function showPosition(position) {
-    if (position!=null) {
-      //alert("ININ");
-      document.getElementById("showLattd").innerText = position.coords.latitude;
-      document.getElementById("showLogtd").innerText = position.coords.longitude;
-      //enableSend();
-      showComment("wow");
-      //alert(document.forms["locom"]["lattd"].value);
-    } else {
-      alert("getting position failed");
-    }
-  }
-
-  function showComment(com) {
-    if (com!=null) {
-      document.getElementById("showComment").innerText = com;
-    } else {
-      alert("getting comments failed");
-    }
-  }
-  
-  </script>
-
-<form id="locom" name="locom" method="post" action="">
-    <label for="expression"><strong>Please share your thoughts:)</strong></label><br>
-    <textarea id="expression" name="comment" rows="5" cols="40" onchange="getLocation()"></textarea><br>
+<form>
+  <label for="Longitude">Longitude: </label>
+  <input type="text" id="Longitude" name="Longitude" /><br>
+  <label for="Latitude">Latitude: </label>
+  <input type="text" id="Latitude" name="Latitude" /><br><br>
+  <label for="From">From: </label>
+  <input type="text" id="From" name="From" /><br>
+  <label for="To">To: </label>
+  <input type="text" id="To" name="To" /><br><br>
+  <label for="Content">Coin: </label>
+  <input type="text" id="Content" name="Content" /><br><br>
+  <button type="submit" name="button0" class="btn">Add Data</button><br><br>
+  <button type="submit" name="button1" class="btn">Clear Table</button><br><br>
+  <button type="submit" name="button2" class="btn">Delete All Tables</button>
 </form>
 
-<p id="showComment">N/A</p>
-<p id="showLattd">N/A</p>
-<p id="showLogtd">N/A</p>
-  
+</div>
+
+<!-- Display table data. -->
+<table border="1" cellpadding="2" cellspacing="2">
+  <tr>
+    <th>ID</th>
+    <th>Longitude</th>
+    <th>Latitude</th>
+    <th>Transmitter</th>
+    <th>Receiver</th>
+    <th>Time</th>
+    <th>Content</th>
+  </tr>
+</table>
+
 </body>
 </html>
