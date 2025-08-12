@@ -5,12 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LocKing</title>
+
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script type="module" src="./index.js"></script>
   <style>
+    /*
     body {
       font-family: Arial, sans-serif;
       padding: 50px;
       background-color: #f9f9f9;
     }
+    */
     .container {
       max-width: 600px;
       margin: auto;
@@ -74,21 +79,11 @@
       <button type="submit" name="button2" class="btn">Delete All Tables</button>
     </form>
   </div>
-  <div class="box">
-    <table border="1" cellpadding="2" cellspacing="2">
-      <tr>
-      <th>ID</th>
-      <th>Longitude</th>
-      <th>Latitude</th>
-      <th>Transmitter</th>
-      <th>Receiver</th>
-      <th>Time</th>
-      <th>Content</th>
-      </tr>
-    </table>
-  </div>
+  <div id="map" class="box"></div>
 </div>
 
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyDsrfl08FlK5mJ08GF9qzdjYc3uimwn2Oo", v: "weekly"});</script>
 
 </body>
 </html>
