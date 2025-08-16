@@ -5,16 +5,18 @@
  */
 html,
 body {
-  height: 100%;
-  margin: 0px 20px 0px 20px;;
+  margin: 0px 20px 20px 20px;;
   padding: 0;
 }
 
+.cell{
+  height: 100%;
+}
 
 /* 
  * Always set the map height explicitly to define the size of the div element
  * that contains the map. 
  */
 #map {
-  height: 20%;
+  height: 100%;
 }
