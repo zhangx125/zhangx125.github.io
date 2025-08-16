@@ -16,40 +16,31 @@
     <div class="grid">
       <div class="box">
         <div class="field">
-          <label class="label">Name</label>
+          <label class="label">Longitude</label>
           <div class="control">
-            <input class="input" type="text" placeholder="Text input">
+            <input class="input" type="text" placeholder="Input X">
+          </div>
+          <label class="label">Latitude</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Input Y">
           </div>
         </div>
 
         <div class="field">
-          <label class="label">Username</label>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
+          <label class="label">From</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Input Sender" value="PZX">
           </div>
-          <p class="help is-success">This username is available</p>
         </div>
 
         <div class="field">
-          <label class="label">Email</label>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
-            </span>
+          <label class="label">To</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Input Receiver" value="XNF">
           </div>
-          <p class="help is-danger">This email is invalid</p>
         </div>
 
+        <!--
         <div class="field">
           <label class="label">Subject</label>
           <div class="control">
@@ -61,14 +52,16 @@
             </div>
           </div>
         </div>
+        -->
 
         <div class="field">
           <label class="label">Message</label>
           <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+            <textarea class="textarea" placeholder="Say something..."></textarea>
           </div>
         </div>
 
+        <!--
         <div class="field">
           <div class="control">
             <label class="checkbox">
@@ -77,6 +70,7 @@
             </label>
           </div>
         </div>
+        
 
         <div class="field">
           <div class="control">
@@ -90,13 +84,14 @@
             </label>
           </div>
         </div>
+        -->
 
         <div class="field is-grouped">
           <div class="control">
-            <button class="button is-link">Submit</button>
+            <button class="button is-link">Bury</button>
           </div>
           <div class="control">
-            <button class="button is-link is-light">Cancel</button>
+            <button class="button is-link is-light">Scan</button>
           </div>
         </div>
       </div>
