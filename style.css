@@ -20,7 +20,7 @@ body {
   min-height: 300px; /* base size */
   aspect-ratio: 16 / 9;
   box-sizing: border-box;
-  border-radius: inherit;
+  /*border-radius: inherit;*/
 }
 
 /* Mobile (<=768px) */
@@ -43,4 +43,5 @@ body {
   #map {
     min-height: 600px;
   }
+
 }
