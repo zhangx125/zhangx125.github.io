@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Event placeholder</title>
+  <desc id="desc">A stylized event scene used as a dummy gallery image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e" />
+      <stop offset="100%" stop-color="#4f8ef7" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#bg)" />
+  <circle cx="180" cy="120" r="35" fill="#ffffff" opacity="0.16" />
+  <circle cx="625" cy="115" r="52" fill="#ffffff" opacity="0.13" />
+  <circle cx="400" cy="95" r="22" fill="#ffd978" />
+  <rect x="165" y="245" width="470" height="135" rx="24" fill="#ffffff" opacity="0.9" />
+  <circle cx="275" cy="313" r="45" fill="#4f8ef7" opacity="0.35" />
+  <circle cx="400" cy="313" r="45" fill="#4f8ef7" opacity="0.35" />
+  <circle cx="525" cy="313" r="45" fill="#4f8ef7" opacity="0.35" />
+  <text x="400" y="470" text-anchor="middle" font-size="40" font-family="Arial, sans-serif" fill="#ffffff">Dummy Event Photo</text>
+</svg>
