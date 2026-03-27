@@ -421,6 +421,18 @@ ul {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
+.gallery-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.gallery-card-link:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 4px;
+  border-radius: 10px;
+}
+
 .gallery-image {
   display: block;
   width: 100%;
