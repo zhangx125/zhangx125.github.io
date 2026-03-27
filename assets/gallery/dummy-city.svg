@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
-  <title id="title">City placeholder</title>
-  <desc id="desc">A stylized city skyline used as a dummy gallery image.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="city-title city-desc">
+  <title id="city-title">City placeholder</title>
+  <desc id="city-desc">A stylized city skyline used as a dummy gallery image.</desc>
   <rect width="800" height="520" fill="#edf3ff" />
   <rect x="90" y="210" width="110" height="220" fill="#4f8ef7" opacity="0.75" />
   <rect x="205" y="145" width="100" height="285" fill="#7aa7fa" />

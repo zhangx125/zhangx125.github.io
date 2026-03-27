@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
-  <title id="title">Nature placeholder</title>
-  <desc id="desc">A stylized nature landscape used as a dummy gallery image.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="nature-title nature-desc">
+  <title id="nature-title">Nature placeholder</title>
+  <desc id="nature-desc">A stylized nature landscape used as a dummy gallery image.</desc>
   <rect width="800" height="520" fill="#f2f9f0" />
   <rect y="325" width="800" height="195" fill="#9fd39f" />
   <circle cx="145" cy="120" r="58" fill="#ffd978" />

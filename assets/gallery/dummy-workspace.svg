@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
-  <title id="title">Workspace placeholder</title>
-  <desc id="desc">A stylized workspace scene used as a dummy gallery image.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="workspace-title workspace-desc">
+  <title id="workspace-title">Workspace placeholder</title>
+  <desc id="workspace-desc">A stylized workspace scene used as a dummy gallery image.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="workspace-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#eef4ff" />
       <stop offset="100%" stop-color="#d6e6ff" />
     </linearGradient>
   </defs>
-  <rect width="800" height="520" fill="url(#bg)" />
+  <rect width="800" height="520" fill="url(#workspace-bg)" />
   <rect x="95" y="130" width="610" height="280" rx="18" fill="#ffffff" />
   <rect x="170" y="95" width="460" height="260" rx="18" fill="#4f8ef7" opacity="0.18" />
   <rect x="230" y="180" width="320" height="170" rx="14" fill="#1a1a2e" />

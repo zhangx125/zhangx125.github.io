@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
-  <title id="title">Travel placeholder</title>
-  <desc id="desc">A stylized travel scene used as a dummy gallery image.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="travel-title travel-desc">
+  <title id="travel-title">Travel placeholder</title>
+  <desc id="travel-desc">A stylized travel scene used as a dummy gallery image.</desc>
   <defs>
-    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="travel-sky" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#d8ecff" />
       <stop offset="100%" stop-color="#f8fbff" />
     </linearGradient>
   </defs>
-  <rect width="800" height="520" fill="url(#sky)" />
+  <rect width="800" height="520" fill="url(#travel-sky)" />
   <circle cx="660" cy="115" r="55" fill="#ffd978" />
   <path d="M0 345 L160 210 L290 300 L430 170 L560 290 L680 225 L800 320 V520 H0 Z" fill="#8ab4f8" />
   <path d="M0 385 L140 270 L275 350 L425 240 L575 355 L710 290 L800 360 V520 H0 Z" fill="#4f8ef7" opacity="0.85" />
