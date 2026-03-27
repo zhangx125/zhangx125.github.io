@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="nature-title nature-desc">
+  <title id="nature-title">Nature placeholder</title>
+  <desc id="nature-desc">A stylized nature landscape used as a dummy gallery image.</desc>
+  <rect width="800" height="520" fill="#f2f9f0" />
+  <rect y="325" width="800" height="195" fill="#9fd39f" />
+  <circle cx="145" cy="120" r="58" fill="#ffd978" />
+  <path d="M0 355 L135 235 L260 335 L400 205 L575 360 L700 260 L800 340 V520 H0 Z" fill="#78bb81" />
+  <path d="M0 395 L125 305 L260 390 L410 295 L560 395 L720 315 L800 360 V520 H0 Z" fill="#59a86a" />
+  <path d="M650 215 C650 165 690 125 740 125 C790 125 830 165 830 215 Z" fill="#ffffff" opacity="0.8" />
+  <text x="400" y="472" text-anchor="middle" font-size="40" font-family="Arial, sans-serif" fill="#1a1a2e">Dummy Nature Photo</text>
+</svg>
